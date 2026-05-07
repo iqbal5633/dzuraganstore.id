@@ -1,104 +1,132 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dzuragan Store</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Linktree</title>
 
-  <!-- FONT -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="style.css">
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, sans-serif;
+    }
+
+    body{
+      background: linear-gradient(135deg,#111,#1f1f1f);
+      color:white;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      min-height:100vh;
+      padding:20px;
+    }
+
+    .container{
+      width:100%;
+      max-width:400px;
+      text-align:center;
+    }
+
+    .profile img{
+      width:120px;
+      height:120px;
+      border-radius:50%;
+      border:4px solid white;
+      object-fit:cover;
+      margin-bottom:15px;
+    }
+
+    .profile h1{
+      font-size:28px;
+      margin-bottom:8px;
+    }
+
+    .profile p{
+      color:#ccc;
+      margin-bottom:30px;
+    }
+
+    .link{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      background:white;
+      color:#111;
+      text-decoration:none;
+      padding:15px;
+      border-radius:15px;
+      margin-bottom:15px;
+      font-weight:bold;
+      transition:0.3s;
+    }
+
+    .link:hover{
+      transform:scale(1.05);
+      background:#25D366;
+      color:white;
+    }
+
+    .link.tiktok:hover{
+      background:#000;
+    }
+
+    .link.instagram:hover{
+      background:linear-gradient(
+        45deg,
+        #feda75,
+        #fa7e1e,
+        #d62976,
+        #962fbf,
+        #4f5bd5
+      );
+    }
+
+    .footer{
+      margin-top:20px;
+      font-size:14px;
+      color:#aaa;
+    }
+  </style>
 </head>
-
 <body>
 
-<!-- LOADER -->
+  <div class="container">
 
-
-<div id="loader">
-  <div class="spinner"></div>
-</div>
-
-<!-- NAVBAR -->
-<header class="navbar">
-  <h2 class="logo">DzuraganStore</h2>
-  <nav>
-    <ul class="nav-links">
-      <li><a href="#home">Beranda</a></li>
-      <li><a href="#about">Tentang</a></li>
-      <li><a href="#services">Layanan</a></li>
-      <li><a href="#contact">Kontak</a></li>
-    </ul>
-  </nav>
-</header>
-
-<!-- HERO -->
-<canvas id="particles"></canvas>
-<div class="glow"></div>
-<div class="glow glow2"></div>
-
-
-<section id="home" class="hero">
-  <div class="hero-content">
-  <h1 class="typing">Selamat datang di Dzuragan Store 🚀</h1>
-    <p class="fade-in delay">Layanan nomor virtual untuk berbagai kebutuhan verifikasi</p>
-    <a href="#contact" class="btn">Order Sekarang</a>
-  </div>
-</section>
-
-<!-- ABOUT -->
-<section id="about" class="section reveal">
-  <h2>Tentang Kami</h2>
-  <p>
-    Kami menyediakan layanan nomor virtual cepat, aman, dan terpercaya
-    untuk berbagai platform digital.
-  </p>
-</section>
-
-<!-- SERVICES -->
-<section id="services" class="section reveal">
-  <h2>Layanan</h2>
-
-  <div class="cards">
-
-    <div class="card">
-      <h3>📱 WhatsApp</h3>
-      <p>Verifikasi akun WhatsApp dengan cepat</p>
+    <div class="profile">
+      <img src="https://i.pravatar.cc/300" alt="Profile">
+      <h1>Iqbal & Dzuraganstore</h1>
+      <p>Welcome to my social links 🚀</p>
     </div>
 
-    <div class="card">
-      <h3>✈️ Telegram</h3>
-      <p>Verifikasi akun Telegram aman</p>
+    <!-- WhatsApp -->
+    <a href="https://wa.me/6281271617785" class="link whatsapp" target="_blank">
+      <i class="fab fa-whatsapp"></i>
+      WhatsApp
+    </a>
+
+    <!-- TikTok -->
+    <a href="https://tiktok.com/@dzuraganstore" class="link tiktok" target="_blank">
+      <i class="fab fa-tiktok"></i>
+      TikTok
+    </a>
+
+    <!-- Instagram -->
+    <a href="https://instagram.com/@ballsmxxs" class="link instagram" target="_blank">
+      <i class="fab fa-instagram"></i>
+      Instagram
+    </a>
+
+    <div class="footer">
+      © 2026 My Linktree
     </div>
 
-    <div class="card">
-      <h3>📸 Instagram</h3>
-      <p>Daftar akun IG tanpa ribet</p>
-    </div>
-    
-  
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact" class="section reveal">
-  <h2>Hubungi Kami</h2>
-
-  <div class="contact-links">
-    <a href="https://instagram.com/ballsmxxs" target="_blank" class="btn ig">Instagram</a>
-    <a href="https://t.me/dzuraganstore" target="_blank" class="btn tg">Telegram</a>
   </div>
 
-</section>
-
-<!-- FOOTER -->
-<footer>
-  <p>© 2026 DzuraganStore</p>
-</footer>
-
-
-<script src="script.js"></script>
 </body>
 </html>
